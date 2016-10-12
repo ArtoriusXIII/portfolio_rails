@@ -1,0 +1,38 @@
+@import "bootstrap";
+@import "normalize";
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+body{
+    background-color: #FDF5E6;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-default{
+    background-color: #FFEFBF;
+    padding: 2em 5%;
+}
+.navbar-default .navbar-brand{
+    font-family: guardian-egyptt, georgia, serif;
+    font-weight: 700;
+    color: #d5641c;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    border: 2px solid $border;
+    padding: 0.75em 1rem;
+    text-decoration: none;
+    float: left;
+}
+.navbar-default .navbar-nav{
+    float: right;
+}
+.navbar-default .navbar-nav > li> a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0192B5;
+    font-size: 15px;
+    float: right;
+}

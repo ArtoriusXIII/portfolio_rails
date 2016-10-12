@@ -8,7 +8,14 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'layouts/header' %>
+  <p><%= content_tag :div, notice, class: "bg-success" %></p>
+  <p><%= content_tag :div, alert, class: "bg-danger" %></p>
+  
+<div class="container">
+  <%= yield %>
+<%= render 'layouts/footer'%>
+</div>
 
 </body>
 </html>
