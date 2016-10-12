@@ -44,6 +44,7 @@ hr{
     height: 2px;
     margin: 2rem 0;
     border-top: 2px solid $highlight;
+    align: center;
 
     
 }
@@ -105,4 +106,12 @@ textarea{
     max-width: 100%;
     min-height: 10em;
 }
-//
+//welcome
+.jumbotron{
+    background-image: url('https://dl.dropboxusercontent.com/s/dgjc5pz2mzx5nhl/Volleyball-adult.jpg?dl=0');
+    width: 1140px;
+    height: 400px;
+    h1, h2 {
+        font-family: guardian-egyptt, georgia, serif;
+    }
+}

@@ -1,4 +1,4 @@
-
+<div align="center">
 <div id="project_wrapper" class="skinny_wrapper wrapper_padding">
   
       <h3><%= link_to @project.title, projects_path %></h3>
@@ -15,4 +15,5 @@
   
       <%= link_to 'Edit project', edit_project_path(@project), class: "btn btn-primary" %>
       <%= link_to 'Delete', project_path(@project), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
+</div>
 </div>
