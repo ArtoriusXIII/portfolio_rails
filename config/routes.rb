@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get '/about' => 'pages#about'
   get '/posts' => 'pages#posts'
-  get '/projects' => 'pages#projects'
+  get '/projects' => 'projects#index'
     resources :posts
     resources :projects
     

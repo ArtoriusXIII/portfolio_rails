@@ -11,6 +11,7 @@ body{
     color: #333333;
     font-family: Arial, Helvetica, sans-serif;
 }
+//navbar header
 .navbar-default{
     background-color: #FFEFBF;
     padding: 2em 5%;
@@ -36,3 +37,72 @@ body{
     font-size: 15px;
     float: right;
 }
+//
+hr{
+    width: 12em;
+    display: block;
+    height: 2px;
+    margin: 2rem 0;
+    border-top: 2px solid $highlight;
+
+    
+}
+//project
+.project_button{
+    background: $highlight;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+.button_wrapper{
+    margin: 4em 0 4em 0;
+    text-align: center;
+    
+}
+
+//contact form
+.hidden { display: none; }
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+//contacts => new.html.erb email form
+.skinny_wrapper{
+    max-width: 760px;
+    margin: 0 auto;
+    width: 80%;
+}
+.wrapper_padding{
+    padding: 4rem 0;
+}
+textarea{
+    width: 100%;
+    max-width: 100%;
+    min-height: 10em;
+}
+//

@@ -1,0 +1,18 @@
+
+<div id="project_wrapper" class="skinny_wrapper wrapper_padding">
+  
+      <h3><%= link_to @project.title, projects_path %></h3>
+      <p><%= @project.created_at.strftime('%A %B %d')  %></p>
+      <hr>
+      <p><%= @project.description %></p>
+      <hr>
+      <div class="button_wrapper">
+          <a href="<%= @project.link %>" class="project_button" target="_blank" >Visit <%= @project.title %></a>
+      </div
+      
+      <hr>
+      <br>
+  
+      <%= link_to 'Edit project', edit_project_path(@project), class: "btn btn-primary" %>
+      <%= link_to 'Delete', project_path(@project), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
+</div>

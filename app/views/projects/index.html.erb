@@ -1,0 +1,18 @@
+
+<h1 id="page_title">Stuff I have Built</h1>
+
+<div id="project_wrapper" class="skinny_wrapper">
+    <% @projects.each do |project| %>
+        <div class="project">
+            <p class="date"><%= project.created_at.strftime('%A %B %d') %></p>
+            <h2><a href="#"><%= link_to project.title, project %></a></h2>
+            <hr>
+        </div>
+    <% end %>
+    
+  <%= link_to 'New Project', new_project_path, class: "btn btn-primary" %>
+
+    
+</div>
+
+
