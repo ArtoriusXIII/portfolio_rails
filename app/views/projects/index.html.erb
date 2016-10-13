@@ -1,22 +1,23 @@
 <div align="center">
-    <h1 id="page_title">Stuff I have Built</h1>
-    <hr>
+<h1 id="page_title">Stuff I have Built</h1>
+<hr>
+    <div class="row clearfix">
+        <% @projects.each do |project| %>
+            <div class="col-md-3 project">
+                <div class="thumbnail">
+                    <%= image_tag project.image.url(:medium) %>
+                    <div class="caption">
+                        <p class="date"><%= project.created_at.strftime('%A %B %d') %></p>
+                        <h2><a href="#"><%= link_to project.title, project %></a></h2>
+                    </div>
+                </div>
+              
+                <hr>
+            </div>
+        <% end %>
+    </div>
+    <div class="button_wrapper"> 
+        <%= link_to 'New Project', new_project_path, class: "btn btn-primary" %>
+    </div>
 </div>
-<div class="row clearfix">
-
-    <% @projects.each do |project| %>
-        <div class="col-sm-6 col-md-4 project">
-            <%= image_tag project.image.url(:medium) %>
-            <p class="date"><%= project.created_at.strftime('%A %B %d') %></p>
-            <h2><a href="#"><%= link_to project.title, project %></a></h2>
-          
-            <hr>
-        </div>
-    <% end %>
-   <div class="button_wrapper"> 
-      <%= link_to 'New Project', new_project_path, class: "btn btn-primary" %>
-   </div>
-</div>
-
-
 
