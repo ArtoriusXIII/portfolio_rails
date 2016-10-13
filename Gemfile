@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~>3.0.3.0'
 gem 'mail_form'
 gem 'simple_form'
-
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'byebug'
