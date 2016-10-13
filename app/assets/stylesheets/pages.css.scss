@@ -71,7 +71,7 @@ hr{
     text-align: center;
     
 }
-.col-md-3:nth-child(4n+1){
+.col-md-4:nth-child(4n+1){
     clear: left;
 }
 
@@ -120,15 +120,7 @@ textarea{
     max-width: 100%;
     min-height: 10em;
 }
-//welcome
-.jumbotron{
-    background-image: url('https://dl.dropboxusercontent.com/s/dgjc5pz2mzx5nhl/Volleyball-adult.jpg?dl=0');
-    width: 1140px;
-    height: 500px;
-    h1, h2 {
-        font-family: guardian-egyptt, georgia, serif;
-    }
-}
+
 
 
 @import 'welcome'
