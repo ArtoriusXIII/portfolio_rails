@@ -4,6 +4,8 @@
       <h3><%= link_to @project.title, projects_path %></h3>
       <p><%= @project.created_at.strftime('%A %B %d')  %></p>
       <hr>
+      <%= image_tag @project.image.url(:thumb) %>
+       <hr>
       <p><%= @project.description %></p>
       <hr>
       <div class="button_wrapper">

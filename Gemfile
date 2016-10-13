@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~>3.0.3.0'
 gem 'mail_form'
 gem 'simple_form'
 gem 'font-awesome-sass'
+gem 'paperclip', '~> 4.2'
 
 group :development, :test do
   gem 'byebug'

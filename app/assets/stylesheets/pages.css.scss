@@ -56,6 +56,10 @@ hr{
     
 }
 //project
+.row{
+    margin: 6em 0 4em 0;
+    padding: 2em 2em;
+}
 .project_button{
     background: $highlight;
     color: white;
@@ -117,7 +121,7 @@ textarea{
 .jumbotron{
     background-image: url('https://dl.dropboxusercontent.com/s/dgjc5pz2mzx5nhl/Volleyball-adult.jpg?dl=0');
     width: 1140px;
-    height: 400px;
+    height: 500px;
     h1, h2 {
         font-family: guardian-egyptt, georgia, serif;
     }
