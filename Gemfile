@@ -14,6 +14,7 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'font-awesome-sass'
 gem 'paperclip', '~> 4.2'
+gem "paperclip-dropbox", ">= 1.1.7"
 
 group :development, :test do
   gem 'byebug'
