@@ -5,10 +5,10 @@
         <% @projects.each do |project| %>
             <div class="col-md-4 project">
                 <div class="thumbnail">
-                    <%= image_tag project.image.url(:medium) %>
+                    <%= link_to image_tag(project.image.url(:medium)), project %>
                     <div class="caption">
                         <p class="date"><%= project.created_at.strftime('%A %B %d') %></p>
-                        <h2><a href="#"><%= link_to project.title, project %></a></h2>
+                        <!--<h2><a href="#"><%= link_to project.title, project %></a></h2>-->
                     </div>
                 </div>
               
