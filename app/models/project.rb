@@ -4,4 +4,6 @@ class Project < ActiveRecord::Base
                       :dropbox_credentials => Rails.root.join("config/dropbox.yml")
                     
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
+    
+    validates :title, :description, :link, presence: true
 end
